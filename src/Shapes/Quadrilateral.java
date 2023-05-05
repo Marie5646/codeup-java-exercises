@@ -4,31 +4,30 @@ import java.awt.*;
 import java.util.PropertyResourceBundle;
 
 public abstract class Quadrilateral extends Shape implements Measurable{
-    protected double Length;
-    protected double Width;
+    protected double length;
+    protected double width;
 
+
+
+    public Quadrilateral(double width, double length){
+        this.length = length;
+        this.width = width;
+
+    }
 
     public double getLength() {
-        return Length;
+        return length;
     }
 
-    public void setLength(double length) {
-        Length = length;
-    }
+    public abstract void setLength(double length);
 
     public double getWidth() {
-        return Width;
+        return width;
     }
 
-    public void setWidth(double width) {
-        Width = width;
-    }
+    public abstract void setWidth(double width);
 
-    public Quadrilateral(double Width, double Length){
-     this.Length = Length;
-     this.Width = Width;
 
-   }
 
  
 
